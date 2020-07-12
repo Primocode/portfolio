@@ -22,6 +22,66 @@ header nav {
   position: absolute;
 }
 
+header nav .menu-bar-close {
+  display: none;
+}
+
+header nav .menu-bar {
+  margin: 10px 0px 0px 15px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+header nav .menu-bar .menu-icon {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+header nav .menu-bar .menu-icon:nth-child(1) {
+  top: 0px;
+}
+
+header nav .menu-bar .menu-icon:nth-child(2) {
+  top: 13px;
+}
+
+header nav .menu-bar .menu-icon:nth-child(3) {
+  top: 26px;
+}
+
+header nav .menu-bar .open:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+header nav .menu-bar .open:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+header nav .menu-bar .open:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 header nav .navigation {
   height: 60px;
   display: -webkit-box;
@@ -39,6 +99,7 @@ header nav .navigation {
 header nav .navigation .logo {
   font-size: 30px;
   font-weight: 900;
+  min-width: 200px;
 }
 
 header nav .navigation .logo a {
@@ -52,6 +113,10 @@ header nav .navigation ul {
   display: flex;
   font-size: 19px;
   list-style-type: none;
+}
+
+header nav .navigation ul li {
+  min-width: 120px;
 }
 
 header nav .navigation ul li a {
@@ -70,6 +135,51 @@ header nav .navigation ul li a:hover {
   -webkit-text-fill-color: transparent;
   -webkit-animation: animate-header-text 3s linear infinite;
           animation: animate-header-text 3s linear infinite;
+}
+
+header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .nav-container .nav-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e6af6), to(#0e6af6));
+  background: linear-gradient(#0e6af6, #0e6af6);
+  border-radius: 7% 0% 13% 100%;
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
+          box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
+  position: fixed;
+  height: 60px;
+  width: 100px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-container .nav-open {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e6af6), to(#0e6af6));
+  background: linear-gradient(#0e6af6, #0e6af6);
+  border-radius: 7% 0% 13% 100%;
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
+          box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header-background .animated-wave {
@@ -143,6 +253,10 @@ header .header-content h2 {
           transition-duration: 1s;
 }
 
+header .header-content h2:hover {
+  font-size: 69px;
+}
+
 @media (max-width: 780px) {
   header .header-content h2 {
     font-size: 43px;
@@ -150,10 +264,6 @@ header .header-content h2 {
   header .header-content h2:hover {
     font-size: 46px;
   }
-}
-
-header .header-content h2:hover {
-  font-size: 69px;
 }
 
 header .header-content p {
@@ -174,6 +284,10 @@ header .header-content p {
           transition-duration: 1s;
 }
 
+header .header-content p:hover {
+  font-size: 35px;
+}
+
 @media (max-width: 780px) {
   header .header-content p {
     font-size: 25px;
@@ -181,10 +295,6 @@ header .header-content p {
   header .header-content p:hover {
     font-size: 28px;
   }
-}
-
-header .header-content p:hover {
-  font-size: 35px;
 }
 
 .section-title-animate {
