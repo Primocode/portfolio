@@ -148,6 +148,11 @@ header {
             justify-content: center;
         }
     }
+    @media (max-width: 1050) {
+        .navigation {
+            display: none;
+        }
+    }
 
     .header-background {
         .animated-wave {

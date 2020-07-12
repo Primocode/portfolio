@@ -182,6 +182,12 @@ header .nav-container .nav-open {
           justify-content: center;
 }
 
+@media (max-width: 1050) {
+  header .navigation {
+    display: none;
+  }
+}
+
 header .header-background .animated-wave {
   z-index: 2;
   position: absolute;
