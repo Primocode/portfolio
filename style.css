@@ -137,6 +137,10 @@ header nav .navigation ul li a:hover {
           animation: animate-header-text 3s linear infinite;
 }
 
+header nav .navigation-close {
+  display: none;
+}
+
 header .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
