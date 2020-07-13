@@ -698,6 +698,16 @@ header .header-content p:hover {
   opacity: 0.4;
 }
 
+footer .footer-background {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
+}
+
 footer .footer-background .footer-background-opacity {
   height: 190px;
   position: absolute;
@@ -715,7 +725,7 @@ footer .footer-background .footer-background-opacity {
 }
 
 footer .footer-background .footer-background-shadow {
-  height: 240px;
+  height: 165px;
   width: 100%;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a83eada), to(#7a83eae0));
@@ -729,7 +739,7 @@ footer .footer-background .footer-background-shadow {
 }
 
 footer .footer-background .footer-background-basic {
-  height: 320px;
+  height: 157px;
   width: 100%;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a84ea), to(#7a83ea));
@@ -740,8 +750,97 @@ footer .footer-background .footer-background-basic {
           animation: animation-footer-basic 5.6s linear infinite;
 }
 
-footer .contact-icon {
+footer .footer-background .footer-bottom {
   position: absolute;
+  padding-bottom: 20px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer .footer-background .footer-bottom .footer-logo {
+  width: auto;
+}
+
+footer .footer-background .footer-bottom .footer-logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+footer .footer-background .footer-bottom .footer-copy {
+  width: auto;
+}
+
+footer .footer-background .footer-bottom .footer-copy p {
+  font-size: 17px;
+  color: white;
+}
+
+footer .footer-background .footer-bottom .contact-icon {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-background .footer-bottom .contact-icon a {
+  text-decoration: none;
+}
+
+footer .footer-background .footer-bottom .contact-icon .contact-tiles {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin: 5px;
+}
+
+footer .footer-background .footer-bottom .contact-icon .contact-tiles span {
+  font-size: 35px;
+  color: white;
+}
+
+footer .footer-background .footer-bottom .contact-icon .contact-tiles:hover {
+  background-color: rgba(255, 255, 255, 0.137);
+}
+
+@media (max-width: 650px) {
+  footer .footer-background .footer-bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer .footer-background {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @-webkit-keyframes animation-footer-basic {

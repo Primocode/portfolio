@@ -546,12 +546,13 @@ header {
 
 footer {
     .footer-background {
+        align-items: flex-end;
+        display: flex;
+        height: 160px;
         .footer-background-opacity {
-            // z-index: 2;
             height: 190px;
             position: absolute;
             width: 100%;
-            // background: linear-gradient(#7a84ea,#0067f7 );
             background: linear-gradient(#747ee888,#2b66b97e );
             box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.11);
             border-top-right-radius: 70%;
@@ -560,33 +561,88 @@ footer {
             transform: translate3d(0px, -20px, 0px);
         }
         .footer-background-shadow {
-            // z-index: 1;
-            height: 240px;
+            height: 165px;
             width: 100%;
             position: absolute;
-            // background: linear-gradient(#7a84ea,#0067f7 );
             background: linear-gradient(#7a83eada, #7a83eae0);
-            // box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
             border-top-right-radius: 70%;
             border-top-left-radius: 30%;
             animation: animation-footer-shadow 5.6s linear infinite;
             transform: translate3d(0px, -5px, 0px);
         }
         .footer-background-basic {
-            // z-index: 0;
-            height: 320px;
+            height: 157px;
             width: 100%;
             position: absolute;
-            // background: linear-gradient(#7a84ea,#0067f7 );
             background: linear-gradient(#7a84ea,#7a83ea);
             border-top-right-radius: 70%;
             border-top-left-radius: 30%;
             animation: animation-footer-basic 5.6s linear infinite;
         }
+        .footer-bottom {
+            position: absolute;
+            padding-bottom: 20px;
+            height: auto;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+            .footer-logo {
+                width: auto;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+            .footer-copy {
+                width: auto;
+                p {
+                    font-size: 17px;
+                    color: white;
+                }
+            }
+            .contact-icon {
+                width: auto;
+                display: flex;
+                a {
+                    text-decoration: none;
+                }
+                .contact-tiles {
+                    height: 50px;
+                    width: 50px;
+                    // background-color: grey;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    border: 2px solid rgb(255, 255, 255);
+                    margin: 5px;
+                    span {
+                        font-size: 35px;
+                        color: white;
+                    }
+                }
+                .contact-tiles:hover {
+                    background-color: rgba(255, 255, 255, 0.137);
+                }
+            }
+        }
+        @media (max-width: 650px) {
+            .footer-bottom {
+                justify-content: center;
+                max-width: 400px;
+            }
+
+        }
     }
-    .contact-icon {
-        position: absolute;
+    @media (max-width: 650px) {
+        .footer-background {
+            justify-content: center;
+        }
     }
+    
 }
 
 @keyframes  animation-footer-basic 
