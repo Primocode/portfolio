@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="main">
         <div class="nav-container">
             <nav class="nav" id="nav-open">
                 <div class="menu-bar" id="menu-hamburger">
@@ -21,14 +21,14 @@
                     <span class="menu-icon" id="menu-icon-hamburger"></span>
                     <span class="menu-icon" id="menu-icon-hamburger"></span>
                 </div>
-                <div class="navigation">
+                <div class="navigation" id="navigation">
                     <div class="logo"><a href="#">P R I M O D E</a></div>
-                    <ul>
-                        <li><a href="#">Główna</a></li>
-                        <li><a href="#">Informacje</a></li>
-                        <li><a href="#">O mnie</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                    <ul class="ul-desktop" id="ul-nav">
+                        <li><a href="#main">Główna</a></li>
+                        <li><a href="#information">Informacje</a></li>
+                        <li><a href="#about-me">O mnie</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
@@ -45,7 +45,7 @@
         </div>
     </header>
     <main>
-        <section class="content">
+        <section class="content" id="information">
             <h2>Nic tak nie motywuje do pracy i działania jak pasja do tego co się robi.<br> Jestem gotów na najważniejszy sprawdzian moich możliwości!</h2>
             <div class="tiles-content">
                 <div class="tiles-container">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me-container-top"></div>
             <div class="about-me-container">
                 <h2 class="section-title section-title-animate">O mnie</h2>
@@ -141,7 +141,7 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="section-title section-title-animate">Projekty</h2>
             <div class="portfolio-container">
                 <div class="tiles-container">
@@ -210,7 +210,7 @@
             </div>
         </section>
         <footer>
-            <div class="footer-background">
+            <div class="footer-background" id="contact">
                 <div class="footer-background-shadow"></div>
                 <div class="footer-background-basic"></div>
                 <div class="footer-bottom">

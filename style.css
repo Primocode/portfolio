@@ -4,6 +4,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -115,7 +119,7 @@ header nav .navigation .logo a {
   color: white;
 }
 
-header nav .navigation ul {
+header nav .navigation .ul-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,13 +127,13 @@ header nav .navigation ul {
   list-style-type: none;
 }
 
-header nav .navigation ul li a {
+header nav .navigation .ul-desktop li a {
   text-decoration: none;
   margin: 0px 20px 0px 20px;
   color: white;
 }
 
-header nav .navigation ul li a:hover {
+header nav .navigation .ul-desktop li a:hover {
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #FFF), color-stop(40%, #f6f6fc88), color-stop(60%, #e3e5ff88), color-stop(80%, #FFF));
   background: linear-gradient(to right, #FFF 20%, #f6f6fc88 40%, #e3e5ff88 60%, #FFF 80%);
   background-size: 200% auto;
@@ -142,8 +146,34 @@ header nav .navigation ul li a:hover {
 }
 
 @media (max-width: 1000px) {
+  header nav .navigation .ul-mobile {
+    display: block;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
   header nav .navigation {
     display: none;
+    margin: 0;
+  }
+  header nav .navigation-mobile-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .navigation-mobile-open .logo {
+    margin: 10px 0px 20px 0px;
   }
 }
 
@@ -155,6 +185,19 @@ header nav .navigation ul li a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  header .nav-mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    background-color: #7a83ea;
+    border-radius: 0% 0% 16% 121%;
+    z-index: 43;
+    height: 80vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
