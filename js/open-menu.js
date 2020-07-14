@@ -16,7 +16,6 @@ const openMenu = () => {
         }); 
     }
 }
-
 document.querySelector('#menu-hamburger').addEventListener('click', openMenu);
 
 const closeMenuClick = () => {
