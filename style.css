@@ -855,8 +855,9 @@ footer .footer-background .footer-bottom .contact-icon a {
 }
 
 footer .footer-background .footer-bottom .contact-icon .contact-tiles {
-  height: 50px;
-  width: 50px;
+  background-color: unset;
+  height: 54px;
+  width: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
