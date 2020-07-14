@@ -19,7 +19,8 @@ header {
     nav {
         transition: 0.5s;
         width: 100%;
-        z-index: 5;
+        z-index: 999;
+        padding: 8px 0px 8px 0px;
         position: absolute;
         .menu-bar-close {
             display: none;
@@ -154,10 +155,24 @@ header {
             }
         }
     }
+    .nav-active {
+        background-color:#6c79ff;
+        border-bottom: #0000001c 2px solid; 
+        position: fixed;
+        z-index: 99;
+        padding: 0;
+    }
     @media (max-width: 1000px) {
         nav {
             display: flex;
             justify-content: flex-end;
+            padding: 2px;
+            background-color: #6c79ff;
+            width: auto;
+            border-radius: 50%;
+            position: fixed;
+            top: 6px;
+            right: 6px;
         }
         .nav-mobile {
             flex-direction: row-reverse;
@@ -166,6 +181,9 @@ header {
             z-index: 43;
             height: 80vh;
             justify-content: flex-start;
+            width: 100%;
+            top: 0;
+            right: 0;
         }
     }
     .nav-container {

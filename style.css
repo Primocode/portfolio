@@ -22,7 +22,8 @@ header nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 100%;
-  z-index: 5;
+  z-index: 999;
+  padding: 8px 0px 8px 0px;
   position: absolute;
 }
 
@@ -177,6 +178,14 @@ header nav .navigation .ul-desktop li a:hover {
   }
 }
 
+header .nav-active {
+  background-color: #6c79ff;
+  border-bottom: #0000001c 2px solid;
+  position: fixed;
+  z-index: 99;
+  padding: 0;
+}
+
 @media (max-width: 1000px) {
   header nav {
     display: -webkit-box;
@@ -185,6 +194,13 @@ header nav .navigation .ul-desktop li a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding: 2px;
+    background-color: #6c79ff;
+    width: auto;
+    border-radius: 50%;
+    position: fixed;
+    top: 6px;
+    right: 6px;
   }
   header .nav-mobile {
     -webkit-box-orient: horizontal;
@@ -198,6 +214,9 @@ header nav .navigation .ul-desktop li a:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 100%;
+    top: 0;
+    right: 0;
   }
 }
 
