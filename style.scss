@@ -21,7 +21,8 @@ header {
             display: none;
         }
         .menu-bar {
-            margin: 10px 0px 0px 15px;
+            display: none;
+            margin: 10px;
             width: 35px;
             height: 35px;
             position: relative;
@@ -61,7 +62,6 @@ header {
             .menu-icon:nth-child(3) {
                 top: 26px;
             }
-
             .open:nth-child(1) {
                 top: 18px;
                 -webkit-transform: rotate(135deg);
@@ -69,18 +69,21 @@ header {
                 -o-transform: rotate(135deg);
                 transform: rotate(135deg);
             }
-              
             .open:nth-child(2) {
                 opacity: 0;
                 left: -60px;
               }
-              
             .open:nth-child(3) {
                 top: 18px;
                 -webkit-transform: rotate(-135deg);
                 -moz-transform: rotate(-135deg);
                 -o-transform: rotate(-135deg);
                 transform: rotate(-135deg);
+            }
+        }
+        @media (max-width: 1000px) {
+            .menu-bar {
+                display: flex;
             }
         }
         .navigation {
@@ -92,7 +95,6 @@ header {
             .logo {
                 font-size: 30px;
                 font-weight: 900;
-                min-width: 200px;
                 a {
                     text-decoration: none;
                     color: white;
@@ -103,7 +105,6 @@ header {
                 font-size: 19px;
                 list-style-type: none;
                 li {
-                    min-width: 120px;
                     a {
                         text-decoration: none;
                         margin: 0px 20px 0px 20px;
@@ -121,42 +122,22 @@ header {
                 }
             }
         }
-        .navigation-close {
-            display: none;
+        @media (max-width: 1000px) {
+            .navigation {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 1000px) {
+        nav {
+            display: flex;
+            justify-content: flex-end;
         }
     }
     .nav-container {
         display: flex;
         justify-content: flex-end;
-        .nav-active {
-            background: linear-gradient(#0e6af6, #0e6af6);
-            border-radius: 7% 0% 13% 100%;
-            box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-            position: fixed;
-            height: 60px;
-            width: 100px;
-            z-index: 999;
-            display: flex;
-            justify-content: center;
-        }
-        .nav-open {
-            background: linear-gradient(#0e6af6, #0e6af6);
-            border-radius: 7% 0% 13% 100%;
-            box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            z-index: 999;
-            display: flex;
-            justify-content: center;
-        }
     }
-    @media (max-width: 1050) {
-        .navigation {
-            display: none;
-        }
-    }
-
     .header-background {
         .animated-wave {
             z-index: 2;
@@ -201,7 +182,7 @@ header {
         width: 100%;
         position: absolute;
         padding: 40px 0px 15px 0px;
-        h2 {
+        h1 {
             font-size: 65px;
             font-family: 'Rubik', sans-serif;
             color: white;
@@ -213,14 +194,14 @@ header {
             -webkit-text-fill-color: transparent;
             transition-duration: 1s;
         }
-        h2:hover {
+        h1:hover {
             font-size: 69px;
         }
         @media (max-width: 780px) {
-            h2 {
+            h1 {
                 font-size: 43px;
             }
-            h2:hover {
+            h1:hover {
                 font-size: 46px;
             }
         }
@@ -393,8 +374,25 @@ header {
             margin: 10px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            .skills-icon-rwd {
+                // position: absolute;
+                span {
+                    position: relative;
+                }
+                span:nth-child(1) {
+                    font-size: 27px;
+                    left: 30px;
+                    bottom: 13px;
+                    color: #2c2c51;
+                }
+                span:nth-child(2) {
+                    color: #2c2c51;
+                    left: -11px;
+                    font-size: 50px;
+                }
+            }
             span {
                 font-size: 55px;
             }
@@ -612,7 +610,6 @@ footer {
                 .contact-tiles {
                     height: 50px;
                     width: 50px;
-                    // background-color: grey;
                     display: flex;
                     justify-content: center;
                     align-items: center;

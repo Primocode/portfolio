@@ -27,7 +27,8 @@ header nav .menu-bar-close {
 }
 
 header nav .menu-bar {
-  margin: 10px 0px 0px 15px;
+  display: none;
+  margin: 10px;
   width: 35px;
   height: 35px;
   position: relative;
@@ -82,6 +83,14 @@ header nav .menu-bar .open:nth-child(3) {
   transform: rotate(-135deg);
 }
 
+@media (max-width: 1000px) {
+  header nav .menu-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 header nav .navigation {
   height: 60px;
   display: -webkit-box;
@@ -99,7 +108,6 @@ header nav .navigation {
 header nav .navigation .logo {
   font-size: 30px;
   font-weight: 900;
-  min-width: 200px;
 }
 
 header nav .navigation .logo a {
@@ -113,10 +121,6 @@ header nav .navigation ul {
   display: flex;
   font-size: 19px;
   list-style-type: none;
-}
-
-header nav .navigation ul li {
-  min-width: 120px;
 }
 
 header nav .navigation ul li a {
@@ -137,8 +141,21 @@ header nav .navigation ul li a:hover {
           animation: animate-header-text 3s linear infinite;
 }
 
-header nav .navigation-close {
-  display: none;
+@media (max-width: 1000px) {
+  header nav .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 header .nav-container {
@@ -148,48 +165,6 @@ header .nav-container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-header .nav-container .nav-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0e6af6), to(#0e6af6));
-  background: linear-gradient(#0e6af6, #0e6af6);
-  border-radius: 7% 0% 13% 100%;
-  -webkit-box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-          box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-  position: fixed;
-  height: 60px;
-  width: 100px;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .nav-container .nav-open {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0e6af6), to(#0e6af6));
-  background: linear-gradient(#0e6af6, #0e6af6);
-  border-radius: 7% 0% 13% 100%;
-  -webkit-box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-          box-shadow: 0px 0px 33px 0px rgba(49, 49, 49, 0.75);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (max-width: 1050) {
-  header .navigation {
-    display: none;
-  }
 }
 
 header .header-background .animated-wave {
@@ -247,7 +222,7 @@ header .header-content {
   padding: 40px 0px 15px 0px;
 }
 
-header .header-content h2 {
+header .header-content h1 {
   font-size: 65px;
   font-family: 'Rubik', sans-serif;
   color: white;
@@ -263,15 +238,15 @@ header .header-content h2 {
           transition-duration: 1s;
 }
 
-header .header-content h2:hover {
+header .header-content h1:hover {
   font-size: 69px;
 }
 
 @media (max-width: 780px) {
-  header .header-content h2 {
+  header .header-content h1 {
     font-size: 43px;
   }
-  header .header-content h2:hover {
+  header .header-content h1:hover {
     font-size: 46px;
   }
 }
@@ -501,12 +476,29 @@ header .header-content p:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills .container-skills-icon .skills-icon .skills-icon-rwd span {
+  position: relative;
+}
+
+.skills .container-skills-icon .skills-icon .skills-icon-rwd span:nth-child(1) {
+  font-size: 27px;
+  left: 30px;
+  bottom: 13px;
+  color: #2c2c51;
+}
+
+.skills .container-skills-icon .skills-icon .skills-icon-rwd span:nth-child(2) {
+  color: #2c2c51;
+  left: -11px;
+  font-size: 50px;
 }
 
 .skills .container-skills-icon .skills-icon span {
