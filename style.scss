@@ -275,13 +275,20 @@ header {
             font-size: 35px;
         }
         @media (max-width: 780px) {
+            h1 {
+                animation: unset;
+            }
             p {
                 font-size: 25px;
+                animation: unset;
             }
             p:hover {
                 font-size: 28px;
             }
         }
+    }
+    @media (max-width: 780px) {
+        top: 24%;
     }
 }
 

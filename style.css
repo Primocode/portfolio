@@ -336,11 +336,23 @@ header .header-content p:hover {
 }
 
 @media (max-width: 780px) {
+  header .header-content h1 {
+    -webkit-animation: unset;
+            animation: unset;
+  }
   header .header-content p {
     font-size: 25px;
+    -webkit-animation: unset;
+            animation: unset;
   }
   header .header-content p:hover {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    top: 24%;
   }
 }
 
