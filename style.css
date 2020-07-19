@@ -290,8 +290,8 @@ header .header-content h1 {
   color: white;
   -webkit-animation: animate-header-text 3s linear infinite;
           animation: animate-header-text 3s linear infinite;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #FFF), color-stop(40%, #f6f6fc88), color-stop(60%, #e3e5ff88), color-stop(80%, #FFF));
-  background: linear-gradient(to right, #FFF 20%, #f6f6fc88 40%, #e3e5ff88 60%, #FFF 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #FFF), color-stop(40%, #f6f6fcea), color-stop(60%, #e3e5ffe3), color-stop(80%, #FFF));
+  background: linear-gradient(to right, #FFF 20%, #f6f6fcea 40%, #e3e5ffe3 60%, #FFF 80%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -319,8 +319,8 @@ header .header-content p {
   font-family: 'Rubik', sans-serif;
   margin: 5px 0px 5px 0px;
   font-weight: 600;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #FFF), color-stop(60%, #ffffff88), color-stop(60%, #ffffff88), color-stop(80%, #FFF));
-  background: linear-gradient(to right, #FFF 20%, #ffffff88 60%, #ffffff88 60%, #FFF 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #FFF), color-stop(40%, #f6f6fcea), color-stop(60%, #e3e5ffe3), color-stop(80%, #FFF));
+  background: linear-gradient(to right, #FFF 20%, #f6f6fcea 40%, #e3e5ffe3 60%, #FFF 80%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -333,6 +333,22 @@ header .header-content p {
 
 header .header-content p:hover {
   font-size: 35px;
+}
+
+header .header-content .call-to-action {
+  margin-top: 5px;
+  padding: 6px 10px 6px 10px;
+  font-size: 19px;
+  background-color: #fafafa00;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+header .header-content .call-to-action a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px 6px 10px;
 }
 
 @media (max-width: 780px) {
@@ -348,21 +364,19 @@ header .header-content p:hover {
   header .header-content p:hover {
     font-size: 28px;
   }
-}
-
-@media (max-width: 780px) {
-  header {
-    top: 24%;
+  header .header-content .call-to-action {
+    font-size: 17px;
+    padding: 4px 10px 4px 10px;
+  }
+  header .header-content .call-to-action a {
+    padding: 4px 10px 4px 10px;
   }
 }
 
-.section-title-animate {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.section-title-animate:hover {
-  font-size: 180%;
+@media (max-width: 780px) {
+  header .header-content {
+    top: 20%;
+  }
 }
 
 @-webkit-keyframes animate-header-text {
@@ -486,6 +500,7 @@ header .header-content p:hover {
 
 .content .tiles-content .tiles-container .tiles p {
   color: #7b7b93;
+  line-height: 21px;
 }
 
 .section-title {
@@ -497,6 +512,7 @@ header .header-content p:hover {
 }
 
 .about-me .about-me-container-top {
+  padding-top: 10px;
   height: 50px;
   background-color: #f2f4fa;
   border-radius: 100% 25% 0% 0%;

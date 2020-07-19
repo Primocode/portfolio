@@ -12,7 +12,7 @@ const openMenu = () => {
             item.className = "menu-icon";
             document.querySelector('#navigation').className = "navigation"
             document.querySelector('#ul-nav').className = "ul-desktop";
-            document.querySelector('#nav-open').className = "nav"
+            document.querySelector('#nav-open').className = "nav";
         }); 
     }
 }
@@ -22,6 +22,5 @@ const closeMenuClick = () => {
     openMenu();
 }
 
-
-document.querySelectorAll('#ul-nav > li > a').forEach(item => item.addEventListener('click', closeMenuClick))
+document.querySelectorAll('#ul-nav > li > a').forEach(item => item.addEventListener('click', closeMenuClick));
 
