@@ -242,6 +242,13 @@ header .header-background .animated-wave {
           animation: animate-wave 5.3s linear infinite;
 }
 
+@media (max-width: 1000px) {
+  header .header-background .animated-wave {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 header .header-background .animated-wave-shadow {
   z-index: 1;
   position: absolute;
@@ -366,10 +373,7 @@ header .header-content .call-to-action a {
   }
   header .header-content .call-to-action {
     font-size: 17px;
-    padding: 4px 10px 4px 10px;
-  }
-  header .header-content .call-to-action a {
-    padding: 4px 10px 4px 10px;
+    padding: 6px 10px 6px 10px;
   }
 }
 

@@ -201,6 +201,11 @@ header {
             border-bottom-left-radius: 30%;
             animation: animate-wave 5.3s linear infinite;
         }
+        @media (max-width: 1000px) {
+            .animated-wave {
+                animation: none
+            }
+        }
         .animated-wave-shadow {
             z-index: 1;
             position: absolute;
@@ -301,10 +306,7 @@ header {
             }
             .call-to-action {
                 font-size: 17px;
-                padding: 4px 10px 4px 10px;
-                a {
-                    padding: 4px 10px 4px 10px;
-                }
+                padding: 6px 10px 6px 10px;
             }
         }
     }
