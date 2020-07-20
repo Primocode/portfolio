@@ -281,6 +281,10 @@ header .header-background .animated-wave-shadow-opacity {
     -webkit-animation: none;
             animation: none;
   }
+  header .header-background .animated-wave-shadow-opacity {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 header .header-content {
