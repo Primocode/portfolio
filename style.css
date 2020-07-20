@@ -242,13 +242,6 @@ header .header-background .animated-wave {
           animation: animate-wave 5.3s linear infinite;
 }
 
-@media (max-width: 1000px) {
-  header .header-background .animated-wave {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
 header .header-background .animated-wave-shadow {
   z-index: 1;
   position: absolute;
@@ -279,13 +272,34 @@ header .header-background .animated-wave-shadow-opacity {
           animation: animate-wave-opacity 8s linear infinite;
 }
 
+@media (max-width: 1000px) {
+  header .header-background .animated-wave {
+    -webkit-animation: none;
+            animation: none;
+  }
+  header .header-background .animated-wave-shadow {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 header .header-content {
   cursor: default;
   z-index: 10;
   font-family: 'Rubik', sans-serif;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  top: 28%;
+  top: 26%;
   width: 100%;
   position: absolute;
   padding: 40px 0px 15px 0px;
@@ -308,7 +322,8 @@ header .header-content h1 {
 }
 
 header .header-content h1:hover {
-  font-size: 69px;
+  -webkit-transform: scale(1.05, 1.07);
+          transform: scale(1.05, 1.07);
 }
 
 @media (max-width: 780px) {
@@ -316,7 +331,8 @@ header .header-content h1:hover {
     font-size: 43px;
   }
   header .header-content h1:hover {
-    font-size: 46px;
+    -webkit-transform: scale(1.05, 1.07);
+            transform: scale(1.05, 1.07);
   }
 }
 
@@ -339,7 +355,8 @@ header .header-content p {
 }
 
 header .header-content p:hover {
-  font-size: 35px;
+  -webkit-transform: scale(1.05, 1.07);
+          transform: scale(1.05, 1.07);
 }
 
 header .header-content .call-to-action {

@@ -201,11 +201,6 @@ header {
             border-bottom-left-radius: 30%;
             animation: animate-wave 5.3s linear infinite;
         }
-        @media (max-width: 1000px) {
-            .animated-wave {
-                animation: none
-            }
-        }
         .animated-wave-shadow {
             z-index: 1;
             position: absolute;
@@ -228,14 +223,25 @@ header {
             border-bottom-left-radius: 15%;
             animation: animate-wave-opacity 8s linear infinite;
         }
+        @media (max-width: 1000px) {
+            .animated-wave {
+                animation: none
+            }
+            .animated-wave-shadow {
+                animation: none;
+            }
+        }
     }
     .header-content {
         cursor: default;
         z-index: 10;
         font-family: 'Rubik', sans-serif;
         height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         text-align: center;
-        top: 28%;
+        top: 26%;
         width: 100%;
         position: absolute;
         padding: 40px 0px 15px 0px;
@@ -252,14 +258,14 @@ header {
             transition-duration: 1s;
         }
         h1:hover {
-            font-size: 69px;
+            transform: scale(1.05,1.07);
         }
         @media (max-width: 780px) {
             h1 {
                 font-size: 43px;
             }
             h1:hover {
-                font-size: 46px;
+                transform: scale(1.05,1.07);
             }
         }
         p {
@@ -277,7 +283,7 @@ header {
             transition-duration: 1s;
         }
         p:hover {
-            font-size: 35px;
+            transform: scale(1.05,1.07);
         }
         .call-to-action {
             margin-top: 5px;
