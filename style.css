@@ -713,14 +713,13 @@ header .header-content .call-to-action a {
   width: 500px;
   background-color: white;
   margin: 11px;
-  -webkit-box-shadow: 0px 0px 33px 0px rgba(216, 216, 216, 0.75);
-          box-shadow: 0px 0px 33px 0px rgba(216, 216, 216, 0.75);
   position: relative;
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-img img {
   height: 100%;
   width: 100%;
+  border-radius: 14px;
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-hover {
@@ -755,20 +754,20 @@ header .header-content .call-to-action a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-icon .tiles-icon {
-  margin: 10px;
+  margin: 6px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-icon .tiles-icon span {
-  font-size: 23px;
+  font-size: 20px;
   color: #2c2c51;
 }
 
