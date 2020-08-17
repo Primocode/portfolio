@@ -35,7 +35,7 @@ header nav .menu-bar {
   display: none;
   margin: 10px;
   width: 35px;
-  height: 35px;
+  height: 32px;
   position: relative;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -148,8 +148,9 @@ header nav .navigation .ul-desktop li a:hover {
 
 @media (max-width: 1000px) {
   header nav .navigation .ul-mobile {
+    line-height: 35px;
     display: block;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -802,6 +803,39 @@ header .header-content .call-to-action a {
 
 .portfolio .portfolio-container .tiles-container .tiles:hover .tiles-hover {
   opacity: 0.4;
+}
+
+.contact {
+  background-color: #f9f9f970;
+  max-width: 860px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 30px 0px 30px 0px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.contact .section-title-contact {
+  color: #2c2c51;
+  font-size: 37px;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  cursor: default;
+}
+
+.contact p {
+  color: #7b7b93;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 30px 15px 15px 15px;
+}
+
+.contact .contact-email {
+  padding: 0;
+}
+
+.contact .contact-email-text {
+  color: #2c2c51;
 }
 
 footer .footer-background {

@@ -19,8 +19,9 @@ const openMenu = () => {
 document.querySelector('#menu-hamburger').addEventListener('click', openMenu);
 
 const closeMenuClick = () => {
-    openMenu();
+    if (window.innerWidth < 1000) {
+        openMenu();
+    }
 }
-
 document.querySelectorAll('#ul-nav > li > a').forEach(item => item.addEventListener('click', closeMenuClick));
 
