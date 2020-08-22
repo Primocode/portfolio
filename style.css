@@ -180,7 +180,7 @@ header nav .navigation .ul-desktop li a:hover {
 }
 
 header .nav-active {
-  background-color: #6c79ff;
+  background: -webkit-gradient(linear, left top, right top, from(#0067f7), to(#6d77eb));
   border-bottom: #0000001c 2px solid;
   position: fixed;
   z-index: 99;
@@ -372,12 +372,21 @@ header .header-content .call-to-action {
   border: 2px solid white;
   border-radius: 15px;
   cursor: pointer;
+  -webkit-box-shadow: rgba(44, 56, 71, 0.25) 0 0.25rem 0.5rem 0;
+          box-shadow: rgba(44, 56, 71, 0.25) 0 0.25rem 0.5rem 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 header .header-content .call-to-action a {
   text-decoration: none;
   color: white;
   padding: 6px 10px 6px 10px;
+}
+
+header .header-content .call-to-action:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #707070;
+          box-shadow: 0px 0px 20px 0px #707070;
 }
 
 @media (max-width: 780px) {
@@ -540,12 +549,12 @@ header .header-content .call-to-action a {
 .about-me .about-me-container-top {
   padding-top: 10px;
   height: 50px;
-  background-color: #f2f4fa;
+  background-color: #fafbff;
   border-radius: 100% 25% 0% 0%;
 }
 
 .about-me .about-me-container {
-  background-color: #f2f4fa;
+  background-color: #fafbff;
   text-align: center;
 }
 
@@ -560,7 +569,7 @@ header .header-content .call-to-action a {
 
 .about-me .about-me-container-bottom {
   height: 50px;
-  background-color: #f2f4fa;
+  background-color: #fafbff;
   border-radius: 0% 0% 100% 25%;
 }
 
@@ -806,15 +815,17 @@ header .header-content .call-to-action a {
 }
 
 .contact {
-  background-color: #f9f9f970;
-  max-width: 860px;
+  background-color: #fafbff;
+  max-width: 1022px;
   margin: 0 auto;
-  margin-bottom: 80px;
-  padding: 30px 0px 30px 0px;
-  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  padding: 0px 0px 142px 0px;
+  border-radius: 50% 50% 0% 0%;
+  top: 65px;
 }
 
 .contact .section-title-contact {
+  padding-top: 30px;
   color: #2c2c51;
   font-size: 37px;
   font-family: 'Muli', sans-serif;
@@ -827,7 +838,7 @@ header .header-content .call-to-action a {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 25px 15px 25px;
 }
 
 .contact .contact-email {
@@ -836,6 +847,12 @@ header .header-content .call-to-action a {
 
 .contact .contact-email-text {
   color: #2c2c51;
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    top: 85px;
+  }
 }
 
 footer .footer-background {
