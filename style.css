@@ -180,7 +180,7 @@ header nav .navigation .ul-desktop li a:hover {
 }
 
 header .nav-active {
-  background: -webkit-gradient(linear, left top, right top, from(#0067f7), to(#6d77eb));
+  background-color: #0067f7;
   border-bottom: #0000001c 2px solid;
   position: fixed;
   z-index: 99;
@@ -546,15 +546,14 @@ header .header-content .call-to-action:hover {
   cursor: default;
 }
 
-.about-me .about-me-container-top {
-  padding-top: 10px;
-  height: 50px;
-  background-color: #fafbff;
-  border-radius: 100% 25% 0% 0%;
-}
-
 .about-me .about-me-container {
-  background-color: #fafbff;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 10%;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(73%, #fafbff));
+  background: linear-gradient(0deg, white 0%, #fafbff 73%);
   text-align: center;
 }
 
@@ -565,12 +564,6 @@ header .header-content .call-to-action:hover {
   font-size: 17px;
   line-height: 26px;
   padding: 15px;
-}
-
-.about-me .about-me-container-bottom {
-  height: 50px;
-  background-color: #fafbff;
-  border-radius: 0% 0% 100% 25%;
 }
 
 .skills {
@@ -1041,5 +1034,23 @@ footer .footer-background .footer-bottom .contact-icon .contact-tiles:hover {
     border-top-right-radius: 68%;
     border-top-left-radius: 25%;
   }
+}
+
+::-webkit-scrollbar {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bebebe;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #afafaf;
 }
 /*# sourceMappingURL=style.css.map */

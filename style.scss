@@ -152,7 +152,7 @@ header {
         }
     }
     .nav-active {
-        background: -webkit-gradient(linear, left top, right top, from(#0067f7), to(#6d77eb));
+        background-color: #0067f7;
         border-bottom: #0000001c 2px solid; 
         position: fixed;
         z-index: 99;
@@ -426,14 +426,13 @@ header {
 }
 
 .about-me {
-    .about-me-container-top {
-        padding-top: 10px;
-        height: 50px;
-        background-color: #fafbff;
-        border-radius: 100% 25% 0% 0%;
-    }
     .about-me-container {
-        background-color: #fafbff;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        border-top-right-radius: 25%;
+        border-top-left-radius: 10%;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,251,255,1) 73%);
         text-align: center;
         p {
             color: #7b7b93;
@@ -443,11 +442,6 @@ header {
             line-height: 26px;
             padding: 15px;
         }
-    }
-    .about-me-container-bottom {
-        height: 50px;
-        background-color: #fafbff;
-        border-radius: 0% 0% 100% 25%;
     }
 }
 
@@ -793,3 +787,22 @@ footer {
         border-top-left-radius: 25%;
     }
 }
+
+::-webkit-scrollbar {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: #bebebe;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: #afafaf;
+}
+
