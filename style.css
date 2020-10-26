@@ -808,13 +808,12 @@ header .header-content .call-to-action:hover {
 }
 
 .contact {
-  background-color: #fafbff;
-  max-width: 1022px;
-  margin: 0 auto;
   position: relative;
   padding: 0px 0px 142px 0px;
   border-radius: 50% 50% 0% 0%;
   top: 65px;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(73%, #fafbff));
+  background: linear-gradient(0deg, white 0%, #fafbff 73%);
 }
 
 .contact .section-title-contact {
