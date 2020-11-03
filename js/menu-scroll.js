@@ -1,4 +1,4 @@
-function update() {
+const update = () => {
     if (innerWidth >= 1000) {
         if ($(window).scrollTop() > 1) {
             $('nav').attr('class', 'nav-active');

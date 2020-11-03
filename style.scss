@@ -429,10 +429,7 @@ header {
     .about-me-container {
         padding-top: 35px;
         padding-bottom: 50px;
-        border-top-right-radius: 25%;
-        border-top-left-radius: 10%;
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,251,255,1) 73%);
+        background-color: #fafafa93;
         text-align: center;
         p {
             color: #7b7b93;
@@ -723,20 +720,24 @@ footer {
                 display: flex;
                 a {
                     text-decoration: none;
+                    height: 100%;
+                    width: 100%;
                 }
                 .contact-tiles {
                     background-color: unset;
                     height: 54px;
                     width: 54px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     border-radius: 100%;
                     border: 2px solid rgb(255, 255, 255);
                     margin: 5px;
                     span {
                         font-size: 35px;
                         color: white;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
                 .contact-tiles:hover {
