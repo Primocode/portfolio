@@ -474,10 +474,15 @@ header {
             }
             span {
                 font-size: 55px;
+                height: 0;
             }
             .skills-icon-text {
+                margin-top: 10px;
                 font-size: 15px;
                 color: #7b7b93;
+            }
+            .fa-python {
+                color: #366c9c;
             }
             .fa-html5 {
                 color: #e34c26;
@@ -489,6 +494,13 @@ header {
             
             .fa-js-square {
                 color: #f0d91d;
+            }
+            .fa-threejs {
+                img {
+                    cursor: default;
+                    max-width: 65px;
+                    height: 55px;
+                } 
             }
             
             .fa-wordpress {
@@ -514,15 +526,7 @@ header {
         .skills-icon:hover {
             filter: brightness(90%);
             opacity: 0.8;
-            animation: animation-icon 0.5s infinite;
         }
-    }
-}
-
-@keyframes animation-icon {
-    50% 
-    {
-        margin-top: 1px;
     }
 }
 

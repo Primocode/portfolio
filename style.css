@@ -617,11 +617,17 @@ header .header-content .call-to-action:hover {
 
 .skills .container-skills-icon .skills-icon span {
   font-size: 55px;
+  height: 0;
 }
 
 .skills .container-skills-icon .skills-icon .skills-icon-text {
+  margin-top: 10px;
   font-size: 15px;
   color: #7b7b93;
+}
+
+.skills .container-skills-icon .skills-icon .fa-python {
+  color: #366c9c;
 }
 
 .skills .container-skills-icon .skills-icon .fa-html5 {
@@ -634,6 +640,12 @@ header .header-content .call-to-action:hover {
 
 .skills .container-skills-icon .skills-icon .fa-js-square {
   color: #f0d91d;
+}
+
+.skills .container-skills-icon .skills-icon .fa-threejs img {
+  cursor: default;
+  max-width: 65px;
+  height: 55px;
 }
 
 .skills .container-skills-icon .skills-icon .fa-wordpress {
@@ -660,20 +672,6 @@ header .header-content .call-to-action:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
   opacity: 0.8;
-  -webkit-animation: animation-icon 0.5s infinite;
-          animation: animation-icon 0.5s infinite;
-}
-
-@-webkit-keyframes animation-icon {
-  50% {
-    margin-top: 1px;
-  }
-}
-
-@keyframes animation-icon {
-  50% {
-    margin-top: 1px;
-  }
 }
 
 .portfolio {
