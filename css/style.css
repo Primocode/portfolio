@@ -715,9 +715,13 @@ header .header-content .call-to-action:hover {
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-img img {
+  -webkit-box-shadow: 0px 0px 55px -5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 55px -5px rgba(0, 0, 0, 0.07);
   height: 100%;
   width: 100%;
-  border-radius: 14px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio .portfolio-container .tiles-container .tiles .tiles-hover {
@@ -798,47 +802,95 @@ header .header-content .call-to-action:hover {
   }
 }
 
-.portfolio .portfolio-container .tiles-container .tiles:hover .tiles-hover {
+.portfolio .portfolio-container .tiles-container .tiles-hover:hover {
   opacity: 0.4;
 }
 
 .contact {
   position: relative;
-  padding: 0px 0px 142px 0px;
-  border-radius: 50% 50% 0% 0%;
-  top: 65px;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(73%, #fafbff));
-  background: linear-gradient(0deg, white 0%, #fafbff 73%);
+  top: 50px;
+  margin: 0px 20px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.contact .section-title-contact {
-  padding-top: 30px;
-  color: #2c2c51;
+.contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 50px 30px 50px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.61);
+          box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.61);
+  border-radius: 15px;
+  background-color: #1d2331;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact .contact-container .section-title-contact {
+  width: 265px;
+  text-align: left;
+  color: #7a84ea;
   font-size: 37px;
   font-family: 'Muli', sans-serif;
-  text-align: center;
+  text-align: left;
   cursor: default;
 }
 
-.contact p {
-  color: #7b7b93;
+.contact .contact-container p {
+  color: #c7c7c7;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 25px 15px 25px;
+  max-width: 600px;
 }
 
-.contact .contact-email {
+@media (max-width: 1199px) {
+  .contact .contact-container p {
+    font-size: 17px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+.contact .contact-container .contact-email {
   padding: 0;
 }
 
-.contact .contact-email-text {
-  color: #2c2c51;
+.contact .contact-container .contact-email-text {
+  color: #7a84ea;
 }
 
-@media (max-width: 1200px) {
-  .contact {
-    top: 85px;
+.contact .contact-container .contact-email-text a {
+  color: #7a84ea;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #7a84ea;
+}
+
+@media (max-width: 830px) {
+  .contact .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-container .section-title-contact {
+    text-align: center;
+  }
+  .contact .contact-container p {
+    margin: 10px;
   }
 }
 
@@ -852,32 +904,16 @@ footer .footer-background {
   height: 160px;
 }
 
-footer .footer-background .footer-background-opacity {
-  height: 190px;
-  position: absolute;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#747ee888), to(#2b66b97e));
-  background: linear-gradient(#747ee888, #2b66b97e);
-  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.11);
-          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.11);
-  border-top-right-radius: 70%;
-  border-top-left-radius: 30%;
-  -webkit-animation: animation-footer-opacity 5.6s linear infinite;
-          animation: animation-footer-opacity 5.6s linear infinite;
-  -webkit-transform: translate3d(0px, -20px, 0px);
-          transform: translate3d(0px, -20px, 0px);
-}
-
 footer .footer-background .footer-background-shadow {
   height: 165px;
   width: 100%;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a83eada), to(#7a83eae0));
   background: linear-gradient(#7a83eada, #7a83eae0);
-  border-top-right-radius: 70%;
-  border-top-left-radius: 30%;
-  -webkit-animation: animation-footer-shadow 5.6s linear infinite;
-          animation: animation-footer-shadow 5.6s linear infinite;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  -webkit-animation: animation-footer-shadow 6.6s linear infinite;
+          animation: animation-footer-shadow 6.6s linear infinite;
   -webkit-transform: translate3d(0px, -5px, 0px);
           transform: translate3d(0px, -5px, 0px);
 }
@@ -888,10 +924,10 @@ footer .footer-background .footer-background-basic {
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a84ea), to(#7a83ea));
   background: linear-gradient(#7a84ea, #7a83ea);
-  border-top-right-radius: 70%;
-  border-top-left-radius: 30%;
-  -webkit-animation: animation-footer-basic 5.6s linear infinite;
-          animation: animation-footer-basic 5.6s linear infinite;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  -webkit-animation: animation-footer-basic 6.6s linear infinite;
+          animation: animation-footer-basic 6.6s linear infinite;
 }
 
 footer .footer-background .footer-bottom {
@@ -994,43 +1030,37 @@ footer .footer-background .footer-bottom .contact-icon .contact-tiles:hover {
 
 @-webkit-keyframes animation-footer-basic {
   50% {
-    border-top-right-radius: 60%;
-    border-top-left-radius: 20%;
+    border-top-right-radius: 15%;
+  }
+  70% {
+    border-top-left-radius: 11%;
   }
 }
 
 @keyframes animation-footer-basic {
   50% {
-    border-top-right-radius: 60%;
-    border-top-left-radius: 20%;
+    border-top-right-radius: 15%;
+  }
+  70% {
+    border-top-left-radius: 11%;
   }
 }
 
 @-webkit-keyframes animation-footer-shadow {
   50% {
-    border-top-right-radius: 63%;
-    border-top-left-radius: 26%;
+    border-top-right-radius: 15%;
+  }
+  70% {
+    border-top-left-radius: 13%;
   }
 }
 
 @keyframes animation-footer-shadow {
   50% {
-    border-top-right-radius: 63%;
-    border-top-left-radius: 26%;
+    border-top-right-radius: 15%;
   }
-}
-
-@-webkit-keyframes animation-footer-opacity {
-  50% {
-    border-top-right-radius: 68%;
-    border-top-left-radius: 25%;
-  }
-}
-
-@keyframes animation-footer-opacity {
-  50% {
-    border-top-right-radius: 68%;
-    border-top-left-radius: 25%;
+  70% {
+    border-top-left-radius: 13%;
   }
 }
 
