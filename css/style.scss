@@ -103,6 +103,10 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
+                    .logo-letter:hover {
+                        position: relative;
+                        bottom: 2px;
+                    }
                 }
             }
             .ul-desktop {
@@ -131,6 +135,13 @@ header {
                     line-height: 35px;
                     display: block;
                     font-size: 30px;
+                    li {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.473);
+                        padding: 6px 0px 6px 0px;
+                    }
+                    li:last-child {
+                        border: none;
+                    }
                 }
             } 
         }
@@ -172,7 +183,7 @@ header {
         }
         .nav-mobile {
             flex-direction: row-reverse;
-            background-color: #7a83ea;
+            background: linear-gradient(#7a84ea,#0067f7e6 );
             border-radius: 0% 0% 16% 121%;
             z-index: 43;
             height: 80vh;
@@ -180,6 +191,7 @@ header {
             width: 100%;
             top: 0;
             right: 0;
+            box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.61);
         }
     }
     .nav-container {
@@ -301,7 +313,8 @@ header {
             }
         }
         .call-to-action:hover {
-            box-shadow: 0px 0px 20px 0px rgb(112, 112, 112);
+            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.10);
+            background-color: rgba(255, 255, 255, 0.10);
         }
         @media (max-width: 780px) {
             h1 {
@@ -437,7 +450,7 @@ header {
             margin: 0 auto;
             font-size: 17px;
             line-height: 26px;
-            padding: 15px;
+            padding: 15px 20px 15px 20px;
         }
     }
 }
@@ -445,7 +458,7 @@ header {
 .skills {
     margin: 40px 0px 40px 0px;
     .container-skills-icon {
-        margin-top: 15px;
+        margin: 15px 20px 0px 20px;
         display: flex;
         list-style-type: none;
         flex-flow: row wrap;
@@ -679,6 +692,10 @@ header {
                 padding: 10px;
                 border-radius: 5px;
                 border: 2px solid #7a84ea;
+                transition-duration: 0.2s;
+            }
+            a:hover {
+                background-color:rgba(122, 131, 234, 0.055);
             }
         }
     }

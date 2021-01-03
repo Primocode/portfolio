@@ -120,6 +120,11 @@ header nav .navigation .logo a {
   color: white;
 }
 
+header nav .navigation .logo a .logo-letter:hover {
+  position: relative;
+  bottom: 2px;
+}
+
 header nav .navigation .ul-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +156,13 @@ header nav .navigation .ul-desktop li a:hover {
     line-height: 35px;
     display: block;
     font-size: 30px;
+  }
+  header nav .navigation .ul-mobile li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.473);
+    padding: 6px 0px 6px 0px;
+  }
+  header nav .navigation .ul-mobile li:last-child {
+    border: none;
   }
 }
 
@@ -208,7 +220,8 @@ header .nav-active {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    background-color: #7a83ea;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7a84ea), to(#0067f7e6));
+    background: linear-gradient(#7a84ea, #0067f7e6);
     border-radius: 0% 0% 16% 121%;
     z-index: 43;
     height: 80vh;
@@ -218,6 +231,8 @@ header .nav-active {
     width: 100%;
     top: 0;
     right: 0;
+    -webkit-box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.61);
+            box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.61);
   }
 }
 
@@ -385,8 +400,9 @@ header .header-content .call-to-action a {
 }
 
 header .header-content .call-to-action:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px #707070;
-          box-shadow: 0px 0px 20px 0px #707070;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 780px) {
@@ -559,7 +575,7 @@ header .header-content .call-to-action:hover {
   margin: 0 auto;
   font-size: 17px;
   line-height: 26px;
-  padding: 15px;
+  padding: 15px 20px 15px 20px;
 }
 
 .skills {
@@ -567,7 +583,7 @@ header .header-content .call-to-action:hover {
 }
 
 .skills .container-skills-icon {
-  margin-top: 15px;
+  margin: 15px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,6 +893,12 @@ header .header-content .call-to-action:hover {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #7a84ea;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.contact .contact-container .contact-email-text a:hover {
+  background-color: rgba(122, 131, 234, 0.055);
 }
 
 @media (max-width: 830px) {
