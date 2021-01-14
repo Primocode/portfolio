@@ -305,8 +305,31 @@
             </div>
         </section>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/open-menu.js"></script>
     <script src="js/menu-scroll.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() { 
+        $('a[href^="#"]').on('click', function(event) {
+            if (window.innerWidth > 1000) {
+                var target = $( $(this).attr('href') );
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 62
+                    }, 1000);
+                }
+            }
+            else {
+                document.querySelector('html').style.scrollBehavior = "smooth";
+            }
+            });
+        });
+
+    </script>
+
+
 </body>
 </html>

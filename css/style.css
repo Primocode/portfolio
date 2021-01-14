@@ -4,10 +4,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -499,10 +495,16 @@ header .header-content .call-to-action:hover {
 .content h2 {
   color: #2c2c51;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   cursor: default;
   margin: 0px 10px 0px 10px;
   font-family: 'Muli', sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .content h2 {
+    font-size: 25px;
+  }
 }
 
 .content .tiles-content {
@@ -556,7 +558,7 @@ header .header-content .call-to-action:hover {
 
 .section-title {
   color: #2c2c51;
-  font-size: 27px;
+  font-size: 30px;
   font-family: 'Muli', sans-serif;
   text-align: center;
   cursor: default;
@@ -957,6 +959,17 @@ footer .footer-background .footer-background-basic {
   border-top-left-radius: 10%;
   -webkit-animation: animation-footer-basic 6.6s linear infinite;
           animation: animation-footer-basic 6.6s linear infinite;
+}
+
+@media (max-width: 1000px) {
+  footer .footer-background .footer-background-shadow {
+    -webkit-animation: none;
+            animation: none;
+  }
+  footer .footer-background .footer-background-basic {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 footer .footer-background .footer-bottom {
